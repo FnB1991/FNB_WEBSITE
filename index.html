@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="br" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript" src="includes/upload/jquery-1.4.2.min.js"></script>
+    <title>FnB - Developers</title>
+</head>
+<body>
+<header>
+    <div class="logo-site">
+        <img src="./img/logo.png"/>
+    </div>
+<nav>
+        <ul>
+            <li><a onclick="carregar('home.html');" href="#">Home</a></li>
+            <li><a onclick="carregar('aboutme.html');" href="#">Sobre</a></li>
+            <li><a onclick="carregar('services.html');" href="#">Serviços</a></li>
+            <li><a onclick="carregar('portfolio.html');" href="#">Portfólio</a></li>
+            <li><a onclick="carregar('contactme.html');" href="#">Contato</a></li>
+        </ul>
+</nav>
+</header>
+<section id="conteudo">
+    <marquee>
+        <h1>Olá, bem vindo ao meu site!</h1>
+    </marquee>
+    <p>Páginas devem ser carregadas nessa DIV</p>
+</section>
+<footer>
+    Desenvolvido por <span class="FnB">FnB</span>.
+</footer>
+</body>
+<script>
+    function carregar(pagina){
+        $("#conteudo").load(pagina);
+    }
+</script>
+</html>

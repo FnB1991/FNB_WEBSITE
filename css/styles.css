@@ -36,6 +36,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ffffff;
+    border-bottom: 3px ridge red;
     font-size: 26px;
 }
 

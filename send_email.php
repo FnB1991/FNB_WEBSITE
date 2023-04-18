@@ -12,7 +12,7 @@ $email = $_REQUEST['email'];
 $body = $body . "Assunto: " . $assunto . "\n";
 $body = $body . "Nome: " . $nome . "\n";
 $body = $body . "Fone: " . $fone . "\n";
-$body = $body . "E-mail: " . $email . "\n\n";
+$body = $body . "E-mail: " . $email . "\n";
 
 // DISPARA E-MAIL
 mail($destinatario, $assunto, $body, "From: $email\r\n");

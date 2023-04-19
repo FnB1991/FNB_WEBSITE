@@ -1,10 +1,9 @@
-# fnbdevelopers
+Responsive Site with options:
 
--- Site Responsivo com:
-* Home
-* Sobre
-* Serviços
-* Portfólio
-* Contato
+* Home;
+* About:
+* Services;
+* Portfolio;
+* Contactme.
 
-Em desenvolvimento!
+Developing!

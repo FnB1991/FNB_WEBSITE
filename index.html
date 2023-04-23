@@ -3,55 +3,67 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" src="includes/upload/jquery-1.4.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>FnB - Developers</title>
 </head>
 
 <body>
-<header>
-    <div class="logo-site">
-        <img alt="logodosite" src="./img/logo.png" />
-    </div>
-    <div class="redes-sociais">
+
+<!-- HEADER DO SITE -->
+    <header>
+        <div class="logo-site">
+            <img alt="logo do site" src="img/logo.svg" />
+        </div>
+        <div class="redes-sociais">
+            <ul>
+                <li><a href=""><img alt="icone do linkedin" src="img/linkedin.png"></a></li>
+                <li><a href=""><img alt="icone do instagram" src="img/instagram.png"></a></li>
+                <li><a href=""><img alt="icone do facebook" src="img/facebook.png"></a></li>
+            </ul>
+        </div>
+    </header>
+<!----    FIM     ---->
+
+<!-- MENU DO SITE -->
+    <nav>
         <ul>
-            <li><a href=""><img alt="linkedin" src="./img/linkedin.png"></a></li>
-            <li><a href=""><img alt="instagram" src="./img/instagram.png"></a></li>
-            <li><a href=""><img alt="facebook" src="./img/facebook.png"></a></li>
+            <li><a onclick="carregar('home.html');" href="#">Home</a></li>
+            <li><a onclick="carregar('aboutme.html');" href="#">Sobre</a></li>
+            <li><a onclick="carregar('services.html');" href="#">Serviços</a></li>
+            <li><a onclick="carregar('portfolio.html');" href="#">Portfólio</a></li>
+            <li><a onclick="carregar('contactme.html');" href="#">Contato</a></li>
         </ul>
-    </div>
-</header>
-<nav>
-    <ul>
-        <li><a onclick="carregar('home.html');" href="#">Home</a></li>
-        <li><a onclick="carregar('aboutme.html');" href="#">Sobre</a></li>
-        <li><a onclick="carregar('services.html');" href="#">Serviços</a></li>
-        <li><a onclick="carregar('portfolio.html');" href="#">Portfólio</a></li>
-        <li><a onclick="carregar('contactme.html');" href="#">Contato</a></li>
-    </ul>
-</nav>
-<section id="conteudo">
-    <h1>Olá, Bem Vindo ao FNB Developers!
-    </h1>
-    <h3>
-        Me chamo Felipe! Sou programador com foco em HTML, PHP, CSS e JavaSript.
-    </h3>
-</section>
-<footer>
-    Desenvolvido por <span class="FnB">FnB</span>.
-</footer>
+    </nav>
+<!-----   FIM  ----->
+
+<!-- SECTION COM JS QUE CARREGA AS PAGES DENTRO DA SECTION "CONTEUDO" -->
+    <section id="conteudo">
+        <h1>
+            Olá, Bem Vindo ao FNB Developers!
+        </h1>
+        <h3>
+            Me chamo Felipe! Sou programador com foco em HTML, PHP, CSS e JavaSript.
+        </h3>
+    </section>
+<!-------------------              FIM               ------------------->
+
+<!-- FOOTER DO SITE -->
+    <footer>
+        Desenvolvido por FnB.
+    </footer>
+<!----    FIM     ---->
+
+<script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/javascript" src="includes/upload/jquery-1.4.2.min.js"></script>
+<script src="./js/main.js"></script>
+
 </body>
-<script>
-    function carregar(pagina) {
-        $("#conteudo").load(pagina);
-    }
-</script>
 
 </html>

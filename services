@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="br" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>FnB - Developers - Serviços</title>
+</head>
+
+<body>
+
+  <section class="services">
+
+    <!-- BOX HTML -->
+    <div class="html-box">
+      <img alt="imagem HTML" src="img/html.png">
+        <article class="specs-languages">
+          <h4>HTML 5</h4>
+            <p>Criação e desenvolvimento na linguagem de marcação
+        mais utilizada em páginas da web utilizando as novas
+        tags e semântica da nova versão.</p>
+        </article>
+    </div>
+
+    <!-- BOX PHP -->
+    <div class="php-box">
+      <img alt="imagem PHP" src="img/php.png">
+        <article class="specs-languages">
+          <h4>PHP</h4>
+            <p>Criação e desenvolvimento na linguagem de marcação
+        mais utilizada em páginas da web utilizando as novas
+        tags e semântica da nova versão.</p>
+        </article>
+    </div>
+
+    <!-- BOX CSS -->
+    <div class="css-box">
+      <img alt="imagem CSS" src="img/css.png">
+        <article class="specs-languages">
+          <h4>CSS</h4>
+            <p>Criação e desenvolvimento na linguagem de marcação
+        mais utilizada em páginas da web utilizando as novas
+        tags e semântica da nova versão.</p>
+        </article>
+    </div>
+
+    <!-- BOX JAVASCRIPT -->
+    <div class="javascript-box">
+      <img alt="imagem JavaScript" src="img/javascript.png">
+        <article class="specs-languages">
+          <h4>JAVASCRIPT</h4>
+            <p>Criação e desenvolvimento na linguagem de marcação
+        mais utilizada em páginas da web utilizando as novas
+        tags e semântica da nova versão.</p>
+        </article>
+    </div>
+
+  </section>
+
+</body>
+</html>

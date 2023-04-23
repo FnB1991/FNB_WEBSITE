@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="br" xmlns="http://www.w3.org/1999/html">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>FnB - Developers - Contato</title>
 </head>
+
 <body>
-<form action="send_email.php" method="post" name="form">
-    <h1>Contato</h1>
-    <br>
-    <h4>Envie uma mensagem, estou quase sempre online. :)</h4>
-    <br>
-    <br>
-    <div class="form-contact">
-    <label for="nome">Nome:</label>
-    <input class="form-nome" type="text" id="nomeid" placeholder="Seu nome aqui." required="required" name="nome"/>
-    <br>
-    <br>
-    <label for="fone">Telefone:</label>
-    <input class="form-fone" type="tel" id="foneid" placeholder="Telefone com DDD." required="required" name="fone"/>
-    <br>
-    <br>
-    <label for="emailid">E-mail:</label>
-    <input class="form-email" type="email" id="emailid" placeholder="Seu melhor e-mail aqui." required="required" name="email"/>
-    <br>
-    <br>
-    <input type="submit" name="submit" value="Enviar"/>
-    </div>
-</form>
+<!-- FORMULARIO DE CONTATO HTML -->
+    <form action="send_email.php" method="post">
+
+        <header>
+            <div class="imgcontainer">
+                <img src="img/contact.png" alt="imagem de contato" class="imagem-contato">
+            </div>
+        </header>
+
+            <div class="container">
+                <label for="name"><b>Nome:</b></label>
+                <input type="text" placeholder="Seu nome completo" name="name" required>
+
+                <label for="email"><b>E-mail:</b></label>
+                <input type="email" placeholder="Seu melhor e-mail" name="email" required>
+
+                <label for="fone"><b>Telefone:</b></label>
+                <input type="tel" placeholder="Seu telefone com DDI e DDD" name="fone" required>
+
+                <button type="submit">Enviar</button>
+
+                <button type="reset">Limpar</button>
+            </div>
+    </form>
+<!----------    FIM     ---------->
+
 </body>
+
 </html>

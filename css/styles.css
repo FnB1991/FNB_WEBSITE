@@ -1,24 +1,22 @@
-html,
-body {
-    height: 100% !important;
-    width: 100% !important;
-    margin: auto !important;
-    color: #EEEEEE;
-    background-image: url("/img/background.png");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    color: #000000;
+    font-family: 'Open Sans', sans-serif;
+    background-image: radial-gradient(73% 147%, #EADFDF 59%, #ECE2DF 100%), radial-gradient(91% 146%, rgba(255,255,255,0.50) 47%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: screen;
 }
 
+/* ESTILOS & FORMATAÇÕES DO TOPO DO SITE: HEADER */
 header {
-    margin-left: 14px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .redes-sociais ul li {
-    margin-top: 35%;
     margin-right: 26px;
     display: inline-block;
     list-style: none;
@@ -57,81 +55,100 @@ header {
         transform: translateX(0);
     }
 }
+/* ----------------     FIM     ---------------- */
 
-p,
-h1,
-h2,
-h3,
-h4 {
-    margin-left: 26px;
-}
-
+/* ESTILOS & FORMATÇÕES DO MENU DE NAVEGAÇÃO */
 nav {
-    margin-left: -41px;
-    padding: 2px;
+    margin: 10px 20px 0 20px;
 }
 
 nav ul li {
-    height: 25px;
-    position: relative;
-    margin-left: 26px;
+    margin: 5px 20px;
     display: inline-block;
-    color: #2f2d2d;
 }
 
 nav ul li a {
-    color: #EEEEEE;
-    font-family: "Bebas Neue", cursive;
+    color: #000000;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 22px;
     text-transform: uppercase;
 }
 
 nav ul li a:hover {
-    color: #EEEEEE;
-    border-bottom: 3px ridge #CF0A0A;
-    font-size: 26px;
+    border-bottom: 3px ridge #0652E9;
+    opacity: 0.7;
 }
+/* ---------------   FIM     --------------- */
 
+/* ESTILOS & FORMATÇÕES DA SECTION CONTEUDO */
 #conteudo {
-    width: 0 auto;
-    height: 0 auto;
+    width: auto;
+    height: auto;
+    margin: 35px 20px;
 }
+/* --------------    FIM     -------------- */
 
+/* ESTILOS & FORMATÇÕES DO FOOTER DO SITE */
 footer {
-    border-top: 2px ridge #8b8b8b;
-    color: #EEEEEE;
+    /* border-top: 1px solid #0F1120; */
     text-align: center;
-    margin: 25px;
-    padding: 5px;
+    padding: 10px 0;
+    margin: 0 21px;
+    color: #F3F5F9;
+    background-image: linear-gradient(to bottom, #434343 0%, black 100%);
 }
+/* --------------   FIM    -------------- */
 
-.FnB {
-    font-weight: bolder;
-}
-
+/* ESTILOS & FORMATAÇÕES DA PÁGINA CONTATO */
 form {
-    margin-left: 25%;
-    margin-right: 25%;
-    height: 40%;
-    padding: 40px;
-    border-radius: 40px;
-    border-style: ridge;
-    text-transform: uppercase;
-    text-align-last: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 35%;
+    margin: auto;
 }
 
-.form-nome {
-    width: 180px;
-    margin-left: 50px;
+input[type=text], input[type=email], input[type=tel] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px ridge;
+    box-sizing: border-box;
 }
 
-.form-fone {
-    width: 180px;
-    margin-left: 16px;
+button {
+    background-color: #0F1120;
+    border-radius: 6px;
+    color: #F3F5F9;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: transparent;
+    cursor: pointer;
+    width: 100%;
 }
 
-.form-email {
-    width: 180px;
-    margin-left: 40px;
+button:hover {
+    opacity: 0.4;
 }
+/* ------           FIM             ------ */
+
+
+/* ESTILOS & FORMATAÇÕES DA PÁGINA SERVIÇOS */
+.services {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.html-box, .php-box, .css-box, .javascript-box {
+    display: block;
+    text-align: center;
+}
+
+.specs-languages {
+    margin: 10px 10px;
+    border: 2px ridge #0F1120;
+}
+/* ------           FIM             ------ */
